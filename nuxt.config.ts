@@ -2,8 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@vite-pwa/nuxt'
+    '@vite-pwa/nuxt',
+    '@unocss/nuxt',
   ],
+  unocss: {
+    preflight: true,
+  },
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
