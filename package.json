@@ -6,15 +6,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@types/node": "^18",
-    "@vite-pwa/nuxt": "^0.1.0",
-    "nuxt": "^3.5.2"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@unocss/nuxt": "^0.53.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.5",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@types/node": "^18",
+    "@vite-pwa/nuxt": "^0.1.0",
+    "eslint": "^8.42.0",
+    "nuxt": "^3.5.2"
   }
 }

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: [
     '@vite-pwa/nuxt',
     '@unocss/nuxt',
+    '@nuxtjs/eslint-module',
   ],
   unocss: {
     preflight: true,
