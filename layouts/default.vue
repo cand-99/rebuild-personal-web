@@ -1,12 +1,10 @@
 <script setup lang="ts">
-// you don't need this: only for testing purposes
-const date = useAppConfig().buildDate
+
 </script>
 
 <template>
   <main>
     <slot />
-    <footer>Built Date: {{ date }}</footer>
     <ClientOnly>
       <div
         v-if="$pwa?.offlineReady || $pwa?.needRefresh"

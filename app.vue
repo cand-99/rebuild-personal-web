@@ -1,16 +1,24 @@
 <script setup lang="ts">
 import { LanguageManager } from './utils/lang'
+import type { ITheme } from './utils/theme'
+import { ThemeManager } from './utils/theme'
 
+ThemeManager()
 LanguageManager()
+const theme = useState<ITheme>('theme.current')
 const locale = useState<string>('locale.setting')
 </script>
 
 <template>
-  <Html :lang="locale">
+  <Html :lang="locale" :class="`${theme === 'dark' ? 'dark bg-dark' : 'bg-white'}`">
     <VitePwaManifest />
-    <NuxtLoadingIndicator />
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <div
+      class="bg-white dark:bg-dark transition duration-300 text-gray-900 dark:text-gray-200 antialiased"
+    >
+      <NuxtLoadingIndicator />
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </div>
   </Html>
 </template>

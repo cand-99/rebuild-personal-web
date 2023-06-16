@@ -1,4 +1,4 @@
-export const useCustomMeta = () => {
+export function useCustomMeta() {
   const defaultDesc
     = 'Kaurabranding merupakan agency penyedia layanan Jasa Brand Design dan Social Media Design untuk kalangan perusahaan maupun UMKM..'
   const defaultImage = 'https://kaura-branding.vercel.app/og.png'
