@@ -8,8 +8,7 @@ const themes = useState<ITheme>('theme.current')
 </script>
 
 <template>
-  <div class="fixed top-16 w-72">
-    {{ themeSetting }}
+  <div class="flex items-center">
     <ClientOnly>
       <Listbox v-model="themeSetting" as="div" class="relative flex items-center">
         <div class="relative mt-1">

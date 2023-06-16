@@ -4,7 +4,7 @@ const { t } = useLang()
 </script>
 
 <template>
-  <div class="fixed top-16 w-72">
+  <div class="flex items-center">
     <ClientOnly>
       <Listbox v-model="localeSetting" as="div" class="relative flex items-center">
         <div class="relative mt-1">

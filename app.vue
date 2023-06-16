@@ -10,15 +10,16 @@ const locale = useState<string>('locale.setting')
 </script>
 
 <template>
-  <Html :lang="locale" :class="`${theme === 'dark' ? 'dark bg-dark' : 'bg-white'}`">
+  <Html :lang="locale" :class="`${theme === 'dark' ? 'dark' : 'bg-white'}`">
     <VitePwaManifest />
     <div
-      class="bg-white dark:bg-dark transition duration-300 text-gray-900 dark:text-gray-200 antialiased"
+      class="bg-white dark:bg-dark-900 transition duration-300 text-gray-900 dark:text-gray-200 antialiased"
     >
       <NuxtLoadingIndicator />
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
+      <BlobGroup />
     </div>
   </Html>
 </template>
