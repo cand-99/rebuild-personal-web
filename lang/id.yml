@@ -1,0 +1,32 @@
+components:
+  language_switcher:
+    change_language: ganti bahasa
+  theme_switcher:
+    theme: tema
+    change_theme: ganti tema
+pages:
+  404:
+    title: Halaman tidak ditemukan
+    error: Ups! ada yang tidak beres
+    description: Halaman yang Anda minta tidak ada saat ini
+    button: Kembali ke beranda
+  index:
+    title: Beranda - Candra Herdiana
+    hi: Hallo
+    im: Saya
+    nav: Beranda
+  about:
+    title: Tentang - Candra Herdiana
+    nav: Tentang
+    description: ini adalah halaman tentang
+    basic: Dasar
+    contact: Kontak
+    framework: Bahasa/Kerangka
+  project:
+    nav: Proyek
+    title: Proyek - Candra Herdiana
+    description: ini adalah halaman tentang
+    visit: Kunjungi
+    team-project: Proyek Tim
+    personal-project: Proyek Pribadi
+ 

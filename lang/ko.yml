@@ -1,0 +1,31 @@
+components:
+  language_switcher:
+    change_language: 언어 변경
+  theme_switcher:
+    theme: 주제
+    change_theme: 테마 변경
+pages:
+  404:
+    title: 페이지를 찾을 수 없음
+    error: 앗! 뭔가 잘못
+    description: 귀하가 요청한 페이지는 현재 존재하지 않습니다
+    button: 홈으로
+  index:
+    title: 집 - Candra Herdiana
+    hi: 안녕하십니까
+    im: 나
+    nav: 집
+  about:
+    title: ~에 대한 - Candra Herdiana
+    nav: ~에 대한
+    description: 이것은 페이지에 관한 것입니다
+    basic: 기초적인
+    contact: 연락하다
+    framework: 언어/프레임워크
+  project:
+    nav: 프로젝트
+    title: 프로젝트 - Candra Herdiana
+    description: ini adalah halaman tentang
+    visit: 방문
+    team-project: 팀 프로젝트
+    personal-project: 개인 프로젝트

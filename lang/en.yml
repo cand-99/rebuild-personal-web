@@ -1,0 +1,31 @@
+components:
+  language_switcher:
+    change_language: change language
+  theme_switcher:
+    theme: theme
+    change_theme: change theme
+pages:
+  404:
+    title: Page not found
+    error: Oops! something wrong
+    description: The page that you requsted doesn’t exist at this moment
+    button: Back to Home
+  index:
+    title: Home - Candra Herdiana
+    hi: Hi
+    im: I am
+    nav: Home
+  about:
+    title: About - Candra Herdiana
+    nav: About
+    description: this is a about page
+    basic: Basic
+    contact: Contact
+    framework: Languange/Framework
+  project:
+    nav: Project
+    title: Project - Candra Herdiana
+    description: ini adalah halaman tentang
+    visit: Visit
+    team-project: Team Project
+    personal-project: Personal Project

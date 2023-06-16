@@ -11,7 +11,9 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@unocss/nuxt": "^0.53.1"
+    "@intlify/nuxt3": "^0.2.4",
+    "@unocss/nuxt": "^0.53.1",
+    "vue-i18n": "^9.2.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.5",
@@ -19,7 +21,11 @@
     "@nuxtjs/eslint-module": "^4.1.0",
     "@types/node": "^18",
     "@vite-pwa/nuxt": "^0.1.0",
+    "@vueuse/core": "^9.6.0",
+    "@vueuse/nuxt": "^9.6.0",
     "eslint": "^8.42.0",
-    "nuxt": "^3.5.2"
+    "nuxt": "^3.5.2",
+    "nuxt-headlessui": "^1.1.4",
+    "nuxt-icon": "^0.4.1"
   }
 }

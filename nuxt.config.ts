@@ -1,10 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import type { IntlifyModuleOptions } from '@intlify/nuxt3'
+
+declare module '@nuxt/schema' {
+  interface NuxtConfig {
+    intlify?: IntlifyModuleOptions
+  }
+}
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@vite-pwa/nuxt',
     '@unocss/nuxt',
     '@nuxtjs/eslint-module',
+    'nuxt-headlessui',
+    '@intlify/nuxt3',
+    '@vueuse/nuxt',
+    'nuxt-icon',
   ],
   unocss: {
     preflight: true,
@@ -43,6 +54,17 @@ export default defineNuxtConfig({
       suppressWarnings: true,
       navigateFallbackAllowlist: [/^\/$/],
       type: 'module',
+    },
+  },
+  headlessui: {
+    prefix: '',
+  },
+  intlify: {
+    localeDir: 'lang',
+    vueI18n: {
+      locale: 'en',
+      fallbackLocale: 'en',
+      availableLocales: ['en', 'id'],
     },
   },
 })

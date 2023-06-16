@@ -1,0 +1,32 @@
+components:
+  language_switcher:
+    change_language: 言語を変更
+  theme_switcher:
+    theme: テーマ
+    change_theme: テーマを変更する
+pages:
+  404:
+    title: ページが見つかりません
+    error: おっとっと！何か問題でも
+    description: リクエストしたページは現在存在しません
+    button: 家に帰る
+  index:
+    title: 家 - Candra Herdiana
+    hi: こんにちは
+    im: 私
+    nav: 家
+  about:
+    title: 約 - Candra Herdiana
+    nav: 約
+    description: これは概要ページです
+    basic: 基本
+    contact: コンタクト
+    framework: 言語/フレームワーク
+  project:
+    nav: 事業
+    title: 事業 - Candra Herdiana
+    description: ini adalah halaman tentang
+    visit: 訪問
+    team-project: チームプロジェクト
+    personal-project: 個人プロジェクト
+ 
