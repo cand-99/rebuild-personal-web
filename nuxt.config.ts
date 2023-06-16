@@ -17,6 +17,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-icon',
   ],
+  app: {
+    pageTransition: { name: 'fade', mode: 'out-in' },
+  },
   unocss: {
     preflight: true,
   },
@@ -67,4 +70,5 @@ export default defineNuxtConfig({
       availableLocales: ['en', 'id'],
     },
   },
+
 })

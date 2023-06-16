@@ -49,17 +49,17 @@ const blob3Class = computed(() => {
     <Blob
       :class="blob1Class"
       :style="{ animationDelay: `1s` }"
-      class="bg-yellow-200 h-60 w-60 blur-3xl dark:bg-yellow-500 animate-blob"
+      class="bg-[#CCCCCC]-200 h-70 w-70 blur-[90px] dark:bg-[#CCCCCC] opacity-70 dark:opacity-50"
     />
     <Blob
       :style="{ animationDelay: `2.5s` }"
       :class="blob2Class"
-      class="bg-purple-200 h-60 w-60 blur-3xl dark:bg-purple-700 animate-blob"
+      class="bg-[#00FFFF] h-70 w-70 blur-[90px] dark:bg-[#00FFFF] opacity-70 dark:opacity-50"
     />
     <Blob
       :style="{ animationDelay: `3s` }"
       :class="blob3Class"
-      class="bg-blue-300 h-60 w-60 blur-3xl dark:bg-blue-700 animate-blob"
+      class="bg-[#FFD700] h-70 w-70 blur-[90px] dark:bg-[#FFD700] opacity-70 dark:opacity-50"
     />
   </div>
 </template>

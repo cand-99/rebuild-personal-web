@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="blur-blob transition absolute -z-10 rounded-full opacity-70 dark:opacity-50 mix-blend-hard-light filter" />
+  <div class="blur-blob transition absolute -z-10 rounded-full mix-blend-hard-light filter" />
 </template>
 
 <style scoped>

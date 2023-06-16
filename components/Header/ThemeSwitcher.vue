@@ -16,11 +16,11 @@ const themes = useState<ITheme>('theme.current')
             type="button"
             :title="t('components.language_switcher.change_language')"
           >
-            <Icon :name="themes === 'dark' ? 'heroicons:moon' : 'heroicons:sun' " class="text-xl" />
+            <Icon :name="themes === 'dark' ? 'heroicons:moon' : 'heroicons:sun' " class="text-xl text-sky-500" />
           </ListboxButton>
 
           <ListboxOptions
-            class="p-1 absolute z-40 top-8 right-0 outline-none bg-white rounded-lg ring-1 ring-gray-900/10 shadow-lg overflow-hidden w-36 py-1 text-sm text-gray-700 font-semibold dark:bg-gray-800 dark:ring-0 dark:text-gray-300"
+            class="p-1 absolute z-40 top-8 right-0 outline-none bg-white rounded-lg ring-1 ring-gray-900/10 shadow-lg overflow-hidden w-36 py-1 text-sm text-gray-700 font-semibold dark:bg-gray-900 dark:ring-0 dark:text-gray-300"
           >
             <ListboxOption
               v-for="theme in availableThemes"

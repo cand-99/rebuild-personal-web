@@ -13,7 +13,7 @@ const locale = useState<string>('locale.setting')
   <Html :lang="locale" :class="`${theme === 'dark' ? 'dark' : 'bg-white'}`">
     <VitePwaManifest />
     <div
-      class="bg-white dark:bg-dark-900 transition duration-300 text-gray-900 dark:text-gray-200 antialiased"
+      class="bg-white dark:bg-black transition duration-300 text-gray-900 dark:text-gray-200 antialiased font-sans"
     >
       <NuxtLoadingIndicator />
       <NuxtLayout>
@@ -23,3 +23,15 @@ const locale = useState<string>('locale.setting')
     </div>
   </Html>
 </template>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
