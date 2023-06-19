@@ -1,43 +1,21 @@
 <script lang="ts" setup>
 import { store } from '../stores'
+import { useGradientColors } from '~/composables/useGradientColors'
 
 const route = useRoute()
+const { colorState, colorState2, colorState3 } = useGradientColors()
 const blob1Class = computed(() => {
   if (store.loading)
-    return 'left-1/4 md:left-1/3 top-1/3 md:top-1/3'
+    return 'left-1/4 top-1/3'
   switch (route.name) {
     case 'index':
-      return 'top-1/4 left-1'
+      return 'top-1/4 left-2/8 '
     case 'about':
-      return 'top-1/2 left-0'
+      return 'top-1/2 left-1/12'
+    case 'project':
+      return 'top-1/12 left-7/12'
     default:
       return 'top-1/2 left-2/3'
-  }
-})
-const blob2Class = computed(() => {
-  if (store.loading)
-    return 'left-1/3 bottom-1/3 '
-  switch (route.name) {
-    case 'index':
-      return 'bottom-1/4 left-1/3'
-    case 'about':
-      return 'bottom-2/3 left-1/3'
-    default:
-      return 'bottom-2/3 left-1'
-  }
-})
-const blob3Class = computed(() => {
-  if (store.loading)
-    return 'bottom-1/3 right-1/3'
-  switch (route.name) {
-    case 'index':
-      return 'bottom-1/2 right-1'
-    case 'about':
-      return 'bottom-1/4 right-1/4'
-    case 'project':
-      return 'bottom-1/4 right-2/3'
-    default:
-      return 'bottom-1/2 -right-1/2'
   }
 })
 </script>
@@ -46,21 +24,15 @@ const blob3Class = computed(() => {
   <div
     class="fixed top-0 transform left-1/2 -translate-x-1/2 max-w-screen-lg w-full h-full "
   >
-    <Blob
-      :class="blob1Class"
-      :style="{ animationDelay: `1s` }"
-      class="bg-[#CCCCCC]-200 h-70 w-70 blur-[90px] dark:bg-[#CCCCCC] opacity-70 dark:opacity-50"
-    />
-    <Blob
-      :style="{ animationDelay: `2.5s` }"
-      :class="blob2Class"
-      class="bg-[#00FFFF] h-70 w-70 blur-[90px] dark:bg-[#00FFFF] opacity-70 dark:opacity-50"
-    />
-    <Blob
-      :style="{ animationDelay: `3s` }"
-      :class="blob3Class"
-      class="bg-[#FFD700] h-70 w-70 blur-[90px] dark:bg-[#FFD700] opacity-70 dark:opacity-50"
-    />
+    <div :class="blob1Class" class="absolute duration-700 bg-red top-1/2">
+      <div class="transition-colors duration-1500 blur-[150px] opacity-70 dark:opacity-60 absolute -z-10 rounded-full inset-0 mix-blend-hard-light filter h-120 w-120" :class="`bg-${colorState.currentColor}` " />
+      <div class="transition-colors duration-1500 blur-[90px] top-5 left-10 opacity-80 dark:opacity-70 absolute -z-10 rounded-full mix-blend-hard-light filter h-70 w-70" :class="`bg-${colorState2.currentColor}`" />
+      <div class="transition-colors duration-1500 blur-[90px] top-45 left-40 opacity-80 dark:opacity-70 absolute -z-10 rounded-full mix-blend-hard-light filter h-70 w-70" :class="`bg-${colorState3.currentColor} `" />
+    </div>
+
+    <div class="bg-rose bg-pink bg-fuchsia bg-purple bg-violet bg-indigo bg-blue bg-sky bg-cyan bg-teal bg-emerald bg-green bg-lime bg-yellow bg-orange  bg-red bg-stone bg-neutral bg-zinc bg-gray bg-slate" />
+    <div class="outline-rose outline-pink outline-fuchsia outline-purple outline-violet outline-indigo outline-blue outline-sky outline-cyan outline-teal outline-emerald outline-green outline-lime outline-yellow outline-orange  outline-red outline-stone outline-neutral outline-zinc outline-gray outline-slate" />
+    <div class="text-rose text-pink text-fuchsia text-purple text-violet text-indigo text-blue text-sky text-cyan text-teal text-emerald text-green text-lime text-yellow text-orange  text-red text-stone text-neutral text-zinc text-gray text-slate" />
   </div>
 </template>
 
