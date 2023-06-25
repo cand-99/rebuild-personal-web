@@ -15,8 +15,8 @@ const locale = useState<string>('locale.setting')
     <div
       class="bg-white dark:bg-black transition duration-300 text-gray-900 dark:text-gray-200 antialiased font-sans"
     >
-      <NuxtLoadingIndicator />
       <NuxtLayout>
+        <NuxtLoadingIndicator />
         <NuxtPage />
       </NuxtLayout>
       <BlobGroup />

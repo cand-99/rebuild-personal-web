@@ -11,7 +11,7 @@ const blob1Class = computed(() => {
     case 'index':
       return 'top-1/4 left-2/8 '
     case 'about':
-      return 'top-1/2 left-1/12'
+      return 'top-1/9 left-2/8'
     case 'project':
       return 'top-1/12 left-7/12'
     default:
@@ -25,9 +25,9 @@ const blob1Class = computed(() => {
     class="fixed top-0 transform left-1/2 -translate-x-1/2 max-w-screen-lg w-full h-full "
   >
     <div :class="blob1Class" class="absolute duration-700 bg-red top-1/2">
-      <div class="transition-colors duration-1500 blur-[150px] opacity-70 dark:opacity-60 absolute -z-10 rounded-full inset-0 mix-blend-hard-light filter h-120 w-120" :class="`bg-${colorState.currentColor}` " />
-      <div class="transition-colors duration-1500 blur-[90px] top-5 left-10 opacity-80 dark:opacity-70 absolute -z-10 rounded-full mix-blend-hard-light filter h-70 w-70" :class="`bg-${colorState2.currentColor}`" />
-      <div class="transition-colors duration-1500 blur-[90px] top-45 left-40 opacity-80 dark:opacity-70 absolute -z-10 rounded-full mix-blend-hard-light filter h-70 w-70" :class="`bg-${colorState3.currentColor} `" />
+      <div class="transition-colors duration-1500 blur-[150px] opacity-70 dark:opacity-30 absolute -z-10 rounded-full inset-0 mix-blend-hard-light filter h-120 w-120" :class="`bg-${colorState.currentColor}` " />
+      <div class="transition-colors duration-1500 blur-[90px] top-5 left-10 opacity-80 dark:opacity-40 absolute -z-10 rounded-full mix-blend-hard-light filter h-70 w-70" :class="`bg-${colorState2.currentColor}`" />
+      <div class="transition-colors duration-1500 blur-[90px] top-45 left-40 opacity-80 dark:opacity-40 absolute -z-10 rounded-full mix-blend-hard-light filter h-70 w-70" :class="`bg-${colorState3.currentColor} `" />
     </div>
 
     <div class="bg-rose bg-pink bg-fuchsia bg-purple bg-violet bg-indigo bg-blue bg-sky bg-cyan bg-teal bg-emerald bg-green bg-lime bg-yellow bg-orange  bg-red bg-stone bg-neutral bg-zinc bg-gray bg-slate" />
