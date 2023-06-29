@@ -13,7 +13,7 @@ const blob1Class = computed(() => {
     case 'about':
       return 'top-1/9 left-2/8'
     case 'project':
-      return 'top-1/12 left-7/12'
+      return 'top-3/12 left-7/12'
     default:
       return 'top-1/2 left-2/3'
   }
@@ -22,7 +22,7 @@ const blob1Class = computed(() => {
 
 <template>
   <div
-    class="fixed top-0 transform left-1/2 -translate-x-1/2 max-w-screen-lg w-full h-full "
+    class="fixed top-0 transform left-1/2 -translate-x-1/2 max-w-screen-lg w-full h-full z-0"
   >
     <div :class="blob1Class" class="absolute duration-700 bg-red top-1/2">
       <div class="transition-colors duration-1500 blur-[150px] opacity-70 dark:opacity-30 absolute -z-10 rounded-full inset-0 mix-blend-hard-light filter h-120 w-120" :class="`bg-${colorState.currentColor}` " />

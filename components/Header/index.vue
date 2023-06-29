@@ -32,8 +32,8 @@ const navBlobClass = computed(() => {
     <div
       class="flex items-center justify-center border-l border-gray-300 dark:border-gray-800 ml-3 pl-3 md:ml-6 md:pl-6 transition duration-200 space-x-4"
     >
-      <HeaderLanguageSwitcher />
-      <HeaderThemeSwitcher />
+      <HeaderLanguageSwitcher class="z-10" />
+      <HeaderThemeSwitcher class="z-10" />
       <a
         href="https://github.com/cand-99"
         target="_blank"

@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     '@intlify/nuxt3',
     '@vueuse/nuxt',
     'nuxt-icon',
+    '@nuxt/image',
   ],
   app: {
     pageTransition: { name: 'fade', mode: 'out-in' },
@@ -68,6 +69,12 @@ export default defineNuxtConfig({
       locale: 'en',
       fallbackLocale: 'en',
       availableLocales: ['en', 'id'],
+    },
+  },
+  image: {
+    cloudinary: {
+      // baseURL: 'https://res.cloudinary.com/<your-cloud-name>/image/upload/<mapping-folder>'
+      baseURL: 'https://res.cloudinary.com/dlgp7anbd/image/upload/v1682049469/',
     },
   },
 
